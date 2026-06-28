@@ -1,18 +1,25 @@
 "use client";
+import CTA from "@/components/landing/CTA";
+import Footer from "@/components/landing/Footer";
+import Header from "@/components/landing/Header";
+import Hero from "@/components/landing/Hero";
+import HowItWorks from "@/components/landing/HowItWorks";
+import PricingSection from "@/components/landing/PricingSection";
+import WhatToAsk from "@/components/landing/WhatToAsk";
 
-import { SignOutButton, SignInButton, SignUpButton, useAuth } from "@clerk/nextjs";
 
 export default function Home() {
-  const { isSignedIn } = useAuth();
 
   return (
-    <div>
-      <h1>Home page</h1>
-      {isSignedIn ? (
-        <SignOutButton>Logout</SignOutButton>
-      ) : (
-        <SignUpButton mode="modal">Sign Up</SignUpButton>
-      )}
+    <div className="min-h-screen bg-background">
+      <Header />
+      <Hero />
+      <HowItWorks />
+      <WhatToAsk />
+      <PricingSection />
+      <CTA />
+      <Footer />
     </div>
   );
 }
+
