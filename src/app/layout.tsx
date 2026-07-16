@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import { ClerkProvider } from '@clerk/nextjs'
+import { ClerkProvider } from "@clerk/nextjs";
 import "./globals.css";
 import UserSync from "@/components/UserSync";
+import TanStackProvider from "@/components/providers/TanStackProvider";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -16,7 +17,8 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "DentWise - AI Powered Dental Assistant",
-  description: "Get instant answers to your dental questions with DentWise, the AI-powered dental assistant. Our advanced AI technology provides accurate and reliable information to help you make informed decisions about your oral health. Available 24/7.",
+  description:
+    "Get instant answers to your dental questions with DentWise, the AI-powered dental assistant. Our advanced AI technology provides accurate and reliable information to help you make informed decisions about your oral health. Available 24/7.",
 };
 
 export default function RootLayout({
@@ -25,24 +27,27 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <ClerkProvider
-      appearance={{
-        variables:{
-          colorPrimary:"#e78a53",
-          colorBackground:"#f3f4f6",
-          colorText:"#111827",
-          colorTextSecondary:"#6b7280",
-          colorInputBackground:"#f3f4f6",
-        }
-      }}>
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased dark`}
+    <TanStackProvider>
+      <ClerkProvider
+        appearance={{
+          variables: {
+            colorPrimary: "#e78a53",
+            colorBackground: "#f3f4f6",
+            colorText: "#111827",
+            colorTextSecondary: "#6b7280",
+            colorInputBackground: "#f3f4f6",
+          },
+        }}
       >
-        <UserSync />
-        {children}
-      </body>
-    </html>
-    </ClerkProvider>
+        <html lang="en">
+          <body
+            className={`${geistSans.variable} ${geistMono.variable} antialiased dark`}
+          >
+            <UserSync />
+            {children}
+          </body>
+        </html>
+      </ClerkProvider>
+    </TanStackProvider>
   );
 }
