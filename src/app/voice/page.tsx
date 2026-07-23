@@ -10,7 +10,11 @@ async function VoicePage() {
 
   const hasProPlan = has({ plan: "ai_basic" }) || has({ plan: "ai_pro" });
 
-  if (!hasProPlan) return <ProPlanRequired />;
+  // if (!hasProPlan) return <ProPlanRequired />;
+  // console.log("User:", userId);
+  // console.log("AI Basic:", has({ plan: "ai_basic" }));
+  // console.log("AI Pro:", has({ plan: "ai_pro" }));
+
 
   return (
     <div className="min-h-screen bg-background">
