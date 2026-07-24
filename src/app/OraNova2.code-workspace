@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../.."
+		},
+		{
+			"path": "../../../../Downloads/Screenshots"
+		}
+	],
+	"settings": {
+		"prisma.pinToPrisma6": true
+	}
+}
