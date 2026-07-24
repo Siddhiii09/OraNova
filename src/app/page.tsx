@@ -15,7 +15,6 @@ export default async function Home() {
   const user = await currentUser();
 
   await syncUser();
-  
 
   if (user) redirect("/dashboard");
 
