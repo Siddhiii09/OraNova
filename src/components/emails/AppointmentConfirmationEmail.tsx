@@ -36,13 +36,13 @@ function AppointmentConfirmationEmail({
         <Container style={container}>
           <Section style={logoContainer}>
             <Img
-              src="https://i.ibb.co.com/tRy6cC2/logo.png"
+              src="../public/logo.png"
               width="50"
               height="50"
-              alt="DentWise"
+              alt="OraNova"
               style={logo}
             />
-            <Text style={logoText}>DentWise</Text>
+            <Text style={logoText}>OraNova</Text>
           </Section>
 
           <Heading style={h1}>Appointment Confirmed! 🦷</Heading>
@@ -90,7 +90,7 @@ function AppointmentConfirmationEmail({
           <Text style={footer}>
             Best regards,
             <br />
-            The DentWise Team
+            The OraNova Team
           </Text>
 
           <Text style={footerText}>
