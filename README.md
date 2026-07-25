@@ -1,36 +1,378 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🦷 OraNova - AI Powered Dental Assistant
 
-## Getting Started
+<div align="center">
 
-First, run the development server:
+![Next.js](https://img.shields.io/badge/Next.js-15-black?logo=next.js)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white)
+![Prisma](https://img.shields.io/badge/Prisma-2D3748?logo=prisma)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?logo=postgresql&logoColor=white)
+![TailwindCSS](https://img.shields.io/badge/TailwindCSS-06B6D4?logo=tailwindcss&logoColor=white)
+![Clerk](https://img.shields.io/badge/Clerk-6C47FF)
+![Vapi AI](https://img.shields.io/badge/Vapi-AI-orange)
+
+### AI-powered dental appointment booking and voice consultation platform
+
+</div>
+
+---
+
+## 📖 Overview
+
+OraNova is a modern AI-powered dental platform that helps patients book appointments, interact with an intelligent voice assistant, and manage their dental care seamlessly.
+
+The platform provides:
+
+- 🤖 AI Voice Assistant powered by Vapi
+- 📅 Smart Appointment Booking
+- 👨‍⚕️ Doctor Management Dashboard
+- 🔐 Secure Authentication
+- 📧 Automated Appointment Emails
+- 💳 Subscription Plans
+- 📊 Admin Dashboard
+- 📱 Fully Responsive UI
+
+---
+
+# ✨ Features
+
+## 👤 Authentication
+
+- Clerk Authentication
+- Email & Password Login
+- Google Authentication
+- Protected Routes
+- User Profiles
+
+---
+
+## 📅 Appointment Booking
+
+- Three-step booking process
+- Doctor selection
+- Date & time scheduling
+- Appointment confirmation
+- Appointment status tracking
+
+---
+
+## 🤖 AI Voice Assistant
+
+- Real-time voice conversations
+- AI-powered dental guidance
+- Voice transcription
+- Conversation history
+- Live speaking indicators
+- Vapi integration
+
+---
+
+## 👨‍⚕️ Doctor Management
+
+- Add doctors
+- Edit doctor information
+- Active/Inactive status
+- Appointment statistics
+- Doctor directory
+
+---
+
+## 📧 Email Automation
+
+- Appointment confirmation emails
+- Beautiful HTML email templates
+- Resend integration
+
+---
+
+## 💳 Subscription System
+
+- Free Plan
+- AI Basic
+- AI Pro
+- Premium Voice Assistant
+- Clerk Billing Integration
+
+---
+
+## 📊 Dashboard
+
+- Appointment Analytics
+- Doctor Overview
+- Admin Controls
+- Quick Actions
+
+---
+
+## 🎨 Modern UI
+
+- Responsive Design
+- Dark Theme
+- Beautiful Gradients
+- Smooth Animations
+- Tailwind CSS
+- shadcn/ui Components
+
+---
+
+# 🛠️ Tech Stack
+
+## Frontend
+
+- Next.js 15
+- React 19
+- TypeScript
+- Tailwind CSS
+- shadcn/ui
+- Lucide Icons
+
+---
+
+## Backend
+
+- Next.js Server Actions
+- Prisma ORM
+- PostgreSQL
+- Neon Database
+
+---
+
+## Authentication
+
+- Clerk
+
+---
+
+## AI
+
+- Vapi AI
+
+---
+
+## Email Service
+
+- Resend
+
+---
+
+## State Management
+
+- TanStack Query
+
+---
+
+## Deployment
+
+- Vercel
+
+---
+
+# 📂 Folder Structure
+
+```bash
+src
+│
+├── app
+│   ├── admin
+│   ├── api
+│   ├── appointments
+│   ├── dashboard
+│   ├── pro
+│   └── voice
+│
+├── components
+│   ├── admin
+│   ├── appointments
+│   ├── dashboard
+│   ├── emails
+│   ├── landing
+│   ├── providers
+│   ├── ui
+│   └── voice
+│
+├── hooks
+├── lib
+├── prisma
+└── public
+```
+
+---
+
+# 🚀 Installation
+
+Clone the repository
+
+```bash
+git clone https://github.com/yourusername/OraNova.git
+```
+
+Move into project
+
+```bash
+cd OraNova
+```
+
+Install dependencies
+
+```bash
+npm install
+```
+
+Run Prisma
+
+```bash
+npx prisma generate
+npx prisma db push
+```
+
+Run development server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+# 🔑 Environment Variables
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Create a `.env` file.
 
-## Learn More
+```env
+DATABASE_URL=
 
-To learn more about Next.js, take a look at the following resources:
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
+CLERK_SECRET_KEY=
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+NEXT_PUBLIC_VAPI_API_KEY=
+NEXT_PUBLIC_VAPI_ASSISTANT_ID=
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+RESEND_API_KEY=
 
-## Deploy on Vercel
+NEXT_PUBLIC_APP_URL=
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+# 📸 Screenshots
+
+## Landing Page
+
+(Add Screenshot)
+
+---
+
+## Dashboard
+
+(Add Screenshot)
+
+---
+
+## Appointment Booking
+
+(Add Screenshot)
+
+---
+
+## AI Voice Assistant
+
+(Add Screenshot)
+
+---
+
+## Doctor Management
+
+(Add Screenshot)
+
+---
+
+## Subscription Plans
+
+(Add Screenshot)
+
+---
+
+# Future Improvements
+
+- AI Image Diagnosis
+- WhatsApp Integration
+- Online Payments
+- Medical Reports
+- Multi-language Support
+- Appointment Reminders
+- SMS Notifications
+- AI Chat History
+- Doctor Availability Calendar
+
+---
+
+# Learning Outcomes
+
+During this project I learned:
+
+- Building scalable Next.js applications
+- Clerk Authentication & Billing
+- Prisma ORM
+- PostgreSQL
+- TanStack Query
+- AI Voice Integration using Vapi
+- Email Automation using Resend
+- Modern UI Design with Tailwind CSS
+- Git Branching & Merge Workflow
+- API Route Development
+
+---
+
+# Contributing
+
+Contributions are welcome.
+
+1. Fork the repository
+
+2. Create a feature branch
+
+```bash
+git checkout -b feature-name
+```
+
+3. Commit changes
+
+```bash
+git commit -m "Added new feature"
+```
+
+4. Push changes
+
+```bash
+git push origin feature-name
+```
+
+5. Open a Pull Request
+
+---
+
+# License
+
+This project is licensed under the MIT License.
+
+---
+
+# Acknowledgements
+
+Special thanks to:
+
+- Next.js
+- Clerk
+- Prisma
+- Vapi AI
+- Resend
+- Tailwind CSS
+- shadcn/ui
+
+---
+
+<div align="center">
+
+### ⭐ If you found this project helpful, consider giving it a star!
+
+Made with ❤️ using Next.js, TypeScript & AI
+
+</div>
