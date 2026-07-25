@@ -256,37 +256,51 @@ NEXT_PUBLIC_APP_URL=
 
 ## Landing Page
 
-(Add Screenshot)
+<p align="center">
+  <img src="./public/screenshots/landingpage1.png" alt="Landing Page 1" width="100%">
+</p>
+
+<p align="center">
+  <img src="./public/screenshots/landingpage2.png" alt="Landing Page 2" width="100%">
+</p>
+
+<p align="center">
+  <img src="./public/screenshots/landingpage3.png" alt="Landing Page 3" width="100%">
+</p>
+
 
 ---
 
 ## Dashboard
 
-(Add Screenshot)
+<p align="center">
+  <img src="./public/screenshots/dashboard.png" alt="Dashboard" width="100%">
+</p>
 
 ---
 
-## Appointment Booking
+## 📅 Appointments
 
-(Add Screenshot)
+<p align="center">
+  <img src="./public/screenshots/appointments.png" alt="Appointments" width="100%">
+</p>
 
----
+<p align="center">
+  <img src="./public/screenshots/appointments2.png" alt="Appointments 2" width="100%">
+</p>
 
-## AI Voice Assistant
-
-(Add Screenshot)
-
----
-
-## Doctor Management
-
-(Add Screenshot)
 
 ---
 
-## Subscription Plans
+## 🎙️ AI Voice Assistant
 
-(Add Screenshot)
+<p align="center">
+  <img src="./public/screenshots/voice1.png" alt="Voice Assistant" width="100%">
+</p>
+
+<p align="center">
+  <img src="./public/screenshots/voice2.png" alt="Voice Assistant 2" width="100%">
+</p>
 
 ---
 
