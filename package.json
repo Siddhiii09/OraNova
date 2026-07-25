@@ -1,10 +1,10 @@
 {
-  "name": "dentsie_voiceagent",
+  "name": "OraNova_voiceagent",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
-    "build": "next build --turbopack",
+    "build": "prisma generate && next build --turbopack",
     "start": "next start",
     "lint": "biome check",
     "format": "biome format --write"
