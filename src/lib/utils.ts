@@ -6,11 +6,16 @@ export function cn(...inputs: ClassValue[]) {
 }
 
 export function generateAvatar(name: string, gender: "MALE" | "FEMALE") {
-  const username = name.replace(/\s+/g, "").toLowerCase();
-  const base = "https://avatar.iran.liara.run/public";
-  if (gender === "FEMALE") return `${base}/girl?username=${username}`;
-  // default to boy
-  return `${base}/boy?username=${username}`;
+  // const username = name.replace(/\s+/g, "").toLowerCase();
+  // const base = "https://avatar.iran.liara.run/public";
+  // if (gender === "FEMALE") return `${base}/girl?username=${username}`;
+  // // default to boy
+  // return `${base}/boy?username=${username}`;
+   if (gender === "MALE") {
+    return "/doctors/male.png";
+  }
+
+  return "/doctors/female.png";
 }
 
 // phone formatting function for US numbers - ai generated 🎉
